@@ -3,7 +3,7 @@ if (isset($_POST['submit'])) {
     $title = htmlspecialchars($_POST['title']);
     $fullname = htmlspecialchars($_POST['fullname']);
     $email = htmlspecialchars($_POST['email']);
-    $content = htmlspecialchars($_POST['content']);
+    // $content = htmlspecialchars($_POST['content']);
 
     // Validate email address
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -14,14 +14,14 @@ if (isset($_POST['submit'])) {
     $template_file = "./email-template.php";
 
     // Set the email 'from' information
-    $email_from = "INFO <info@phenomtalentmanagement.com>";
+    $email_from = "Phenom Talent MGT <info@phenomtalentmanagement.com>";
 
     // Create a list of the variables to be swapped in the HTML template
     $swap_var = array(
         "{SITE_ADDR}" => "https://phenomtalentmanagement.com",
         "{EMAIL_TITLE}" => "$title",
         "{TO_NAME}" => "$fullname",
-        "{EMAIL_CONTENT}" => "$content",
+        // "{EMAIL_CONTENT}" => "$content",
         "{TO_EMAIL}" => "$email"
     );
 

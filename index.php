@@ -23,25 +23,15 @@
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
                 <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500" required>
             </div>
-            <div>
+            <!-- <div>
                 <label for="content" class="block text-sm font-medium text-gray-700 mb-2">Email Content</label>
-                <textarea id="content" name="content" rows="8" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500" required></textarea>
-            </div>
+                <textarea  name="content" rows="8" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500" required></textarea>
+            </div> -->
             <div class="flex items-center justify-center">
                 <button type="submit" name="submit" class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700">Send Email</button>
             </div>
         </form>
     </div>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#content'), {
-                // Adjust the height of the editor
-                minHeight: '300px', // Uncomment and set your desired minHeight
-                maxHeight: '600px' // Uncomment and set your desired maxHeight
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
+   
 </body>
 </html>
